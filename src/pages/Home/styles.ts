@@ -79,3 +79,19 @@ export const BoxImagesContainer = styled.section`
         height: 30rem;
     }
 `
+
+export const CustomerTestimonialsContainer = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 8rem;
+`
+
+export const TestimonialsBox = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    align-content: center;
+`
