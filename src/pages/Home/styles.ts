@@ -84,14 +84,48 @@ export const CustomerTestimonialsContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
 
     padding: 8rem;
+
+    h3 {
+        font-size: 1.5rem;
+        color: ${props => props.theme.colors["gray-300"]};
+        text-transform: uppercase;
+    }
 `
 
 export const TestimonialsBox = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 1.5rem;
+    column-gap: 4rem;
     align-content: center;
+`
+
+export const TestimonialContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+
+    text-align: center;
+
+    img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    div {
+        p:nth-child(1) {
+            font-weight: 700;
+            padding-bottom: 0.25rem;
+        }
+        p:nth-child(2) {
+            font-size: 0.875rem;
+            color: ${props => props.theme.colors["gray-300"]};
+        }
+    }
 `
