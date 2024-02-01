@@ -68,3 +68,14 @@ export const KnowMoreButton = styled.button`
         transition-property: width, left;
     }
 `
+
+export const BoxImagesContainer = styled.section`
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 30rem;
+    }
+`
