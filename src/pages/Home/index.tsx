@@ -15,7 +15,7 @@ import Content from "./homeContent.json"
 import { ScrollAppearImage } from "./components/ScrollAppearImage"
 
 export function HomePage() {
-    const costumerTestimonials = Content.homeContent.testimonials.map((item, index) => ({
+    const customerTestimonials = Content.homeContent.testimonials.map((item, index) => ({
         ...item,
         pathCostumerImage: index === 0 ? Profile1 : index === 1 ? Profile2 : Profile3,
     }))
@@ -42,13 +42,13 @@ export function HomePage() {
                 <h3>Testemunhos dos nossos clientes</h3>
                 <TestimonialsBox>
                     {
-                        costumerTestimonials.map((item) => (
+                        customerTestimonials.map((item) => (
                             <TestimonialContent key={item.id}>
-                                <img src={item.pathCostumerImage} alt={`Imagem do cliente ${item.costumerName}`} loading="lazy"/>
+                                <img src={item.pathCostumerImage} alt={`Imagem do cliente ${item.customerName}`} loading="lazy"/>
                                 <p>{item.testimonial}</p>
                                 <div>
-                                    <p>{item.costumerName}</p>
-                                    <p>{item.costumerCharge}</p>
+                                    <p>{item.customerName}</p>
+                                    <p>{item.customerCharge}</p>
                                 </div>
                             </TestimonialContent>
                         ))

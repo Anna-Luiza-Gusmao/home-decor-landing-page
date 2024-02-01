@@ -18,20 +18,20 @@
             {
                 "id": 1,
                 "testimonial": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.",
-                "costumerName": "Emily Lopes",
-                "costumerCharge": "Arquiteta"
+                "customerName": "Emily Lopes",
+                "customerCharge": "Arquiteta"
             },
             {
                 "id": 2,
                 "testimonial": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia",
-                "costumerName": "Lília Ferreira",
-                "costumerCharge": "Engenheira Civil"
+                "customerName": "Lília Ferreira",
+                "customerCharge": "Engenheira Civil"
             },
             {
                 "id": 3,
                 "testimonial": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia",
-                "costumerName": "Leandro Vieira",
-                "costumerCharge": "Design de Interiores"
+                "customerName": "Leandro Vieira",
+                "customerCharge": "Design de Interiores"
             }
         ]
     }

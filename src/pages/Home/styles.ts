@@ -86,7 +86,7 @@ export const CustomerTestimonialsContainer = styled.section`
     align-items: center;
     gap: 4rem;
 
-    padding: 8rem;
+    padding: 12rem;
 
     h3 {
         font-size: 1.5rem;
