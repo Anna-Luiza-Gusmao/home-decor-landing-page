@@ -1,14 +1,14 @@
-import HomeImg1 from "../../assets/home/img1.jpg"
-import HomeImg2 from "../../assets/home/img2.jpg"
-import HomeImg3 from "../../assets/home/img3.jpg"
-import HomeImg4 from "../../assets/home/img4.jpg"
-import HomeImg5 from "../../assets/home/img5.jpg"
-import HomeImg6 from "../../assets/home/img6.jpg"
-import HomeImg7 from "../../assets/home/img7.jpg"
+import HomeImg1 from "../../assets/home/img1.jpeg"
+import HomeImg2 from "../../assets/home/img2.jpeg"
+import HomeImg3 from "../../assets/home/img3.jpeg"
+import HomeImg4 from "../../assets/home/img4.jpeg"
+import HomeImg5 from "../../assets/home/img5.jpeg"
+import HomeImg6 from "../../assets/home/img6.jpeg"
+import HomeImg7 from "../../assets/home/img7.jpeg"
 
-import Profile1 from "../../assets/home/profile1.jpg"
-import Profile2 from "../../assets/home/profile2.jpg"
-import Profile3 from "../../assets/home/profile3.jpg"
+import Profile1 from "../../assets/home/profile1.jpeg"
+import Profile2 from "../../assets/home/profile2.jpeg"
+import Profile3 from "../../assets/home/profile3.jpeg"
 
 import { BoxImagesContainer, CustomerTestimonialsContainer, DescriptionContainer, HomeContainer, KnowMoreButton, TestimonialContent, TestimonialsBox } from "./styles"
 import Content from "./homeContent.json"
@@ -44,7 +44,7 @@ export function HomePage() {
                     {
                         costumerTestimonials.map((item) => (
                             <TestimonialContent key={item.id}>
-                                <img src={item.pathCostumerImage} alt={`Imagem do cliente ${item.costumerName}`} />
+                                <img src={item.pathCostumerImage} alt={`Imagem do cliente ${item.costumerName}`} loading="lazy"/>
                                 <p>{item.testimonial}</p>
                                 <div>
                                     <p>{item.costumerName}</p>
