@@ -12,7 +12,7 @@ export function Footer() {
 				<h2>homedecor</h2>
 				<NavigableLinkBox>
 					<Link to="/">Sobre</Link>
-					<Link to="/">Serviços</Link>
+					<Link to="servicos">Serviços</Link>
 					<Link to="/">Decorações</Link>
 				</NavigableLinkBox>
 			</div>

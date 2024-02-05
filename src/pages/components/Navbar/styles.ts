@@ -10,6 +10,7 @@ export const NavbarContent = styled.nav`
 
     h1 {
         font-size: 2rem;
+        cursor: pointer;
     }
 `
 
