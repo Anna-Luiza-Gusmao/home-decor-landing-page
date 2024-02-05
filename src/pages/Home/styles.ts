@@ -84,7 +84,7 @@ export const CustomerTestimonialsContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 6rem;
 
     padding: 12rem;
 
