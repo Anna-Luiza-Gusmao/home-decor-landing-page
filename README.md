@@ -10,7 +10,7 @@ npm run dev
 ```
 ou entre no link:
 ```
-
+homedecor-kappa.vercel.app
 ```
 
 
