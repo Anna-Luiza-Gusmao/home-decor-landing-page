@@ -60,7 +60,7 @@ export const CarouselBox = styled.section`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-        gap: 0.5rem;
+		gap: 0.5rem;
 	}
 
 	h3 {
@@ -75,4 +75,42 @@ export const CarouselBox = styled.section`
 		border: 0.15rem solid ${(props) => props.theme.colors["gray-300"]};
 		border-radius: 6px;
 	}
+`
+
+export const ServicesBox = styled.section`
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 10rem;
+	row-gap: 10rem;
+
+	padding: 8rem 16rem;
+`
+
+export const ServicesItens = styled.div`
+	display: flex;
+	gap: 4rem;
+	align-items: center;
+`
+
+export const ServicesIcons = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 6rem;
+	height: 6rem;
+	background-color: ${(props) => props.theme.colors["beige-100"]};
+	border-radius: 4rem;
+	padding: 2rem;
+
+    box-shadow: 0px 8px 21px -7px ${(props) => props.theme.colors["beige-600"]};
+`
+
+export const ServicesDescription = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h2 {
+        font-size: 1.25rem;
+    }
 `
