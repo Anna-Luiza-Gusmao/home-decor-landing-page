@@ -39,8 +39,4 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1rem;
         color: ${props => props.theme.colors["black-400"]};
     }
-
-    :focus {
-        outline: 4px auto -webkit-focus-ring-color;
-    }
 `
