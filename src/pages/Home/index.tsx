@@ -13,8 +13,10 @@ import Profile3 from "../../assets/home/profile3.jpeg"
 import { BoxImagesContainer, CustomerTestimonialsContainer, DescriptionContainer, HomeContainer, KnowMoreButton, TestimonialContent, TestimonialsBox } from "./styles"
 import Content from "./homeContent.json"
 import { ScrollAppearImage } from "./components/ScrollAppearImage"
+import { useNavigate } from "react-router"
 
 export function HomePage() {
+    const navigate = useNavigate()
     const customerTestimonials = Content.homeContent.testimonials.map((item, index) => ({
         ...item,
         pathCostumerImage: index === 0 ? Profile1 : index === 1 ? Profile2 : Profile3,
@@ -27,14 +29,14 @@ export function HomePage() {
                 <div>
                     <h2>{Content.homeContent.description[0].title}</h2>
                     <p>{Content.homeContent.description[0].description}</p>
-                    <KnowMoreButton>Saiba mais</KnowMoreButton>
+                    <KnowMoreButton onClick={() => navigate("servicos")}>Saiba mais</KnowMoreButton>
                 </div>
                 <ScrollAppearImage imageKey="1" imageUrl={HomeImg2} alt="Casa Decorada 2" porcentScreen="100%" />
                 <ScrollAppearImage imageKey="2" imageUrl={HomeImg3} alt="Casa Decorada 3" porcentScreen="-100%" />
                 <div>
                     <h2>{Content.homeContent.description[1].title}</h2>
                     <p>{Content.homeContent.description[1].description}</p>
-                    <KnowMoreButton>Saiba mais</KnowMoreButton>
+                    <KnowMoreButton onClick={() => navigate("servicos")}>Saiba mais</KnowMoreButton>
                 </div>
             </DescriptionContainer>
 
