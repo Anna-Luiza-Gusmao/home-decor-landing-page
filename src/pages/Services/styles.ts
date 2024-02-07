@@ -102,15 +102,55 @@ export const ServicesIcons = styled.div`
 	border-radius: 4rem;
 	padding: 2rem;
 
-    box-shadow: 0px 8px 21px -7px ${(props) => props.theme.colors["beige-600"]};
+	box-shadow: 0px 8px 21px -7px ${(props) => props.theme.colors["beige-600"]};
 `
 
 export const ServicesDescription = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
 
-    h2 {
-        font-size: 1.25rem;
+	h2 {
+		font-size: 1.25rem;
+	}
+`
+
+export const ServicesExamplesContainer = styled.section`
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+	width: 100%;
+	padding: 6rem 0;
+`
+
+export const ServicesExampleBox = styled.div`
+	display: flex;
+	align-items: center;
+`
+
+export const ExampleDescription = styled.div`
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+
+	height: 70%;
+    padding: 6rem;
+	background-color: ${(props) => props.theme.colors["beige-150"]};
+	box-shadow: 0px 3px 21px -10px ${(props) => props.theme.colors["beige-600"]};
+`
+
+export const ExampleImage = styled.div<{ $isMarginRight: boolean }>`
+	width: 100vw;
+	height: 90vh;
+	
+	margin-right: ${(props) => props.$isMarginRight && "4rem"};
+    margin-left: ${(props) => !props.$isMarginRight && "4rem"};
+    
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
     }
 `
