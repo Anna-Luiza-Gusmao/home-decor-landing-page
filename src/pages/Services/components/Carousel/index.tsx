@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { CarouselButton, CarouselContainer, CarouselImage } from "./styles"
+import { CaretLeft, CaretRight } from "@phosphor-icons/react"
 
 interface ICarouselProps {
 	images: Array<string>
@@ -19,7 +20,7 @@ export const Carousel: React.FC<ICarouselProps> = ({ images }) => {
 	return (
 		<CarouselContainer>
 			<CarouselButton onClick={prevSlide} $isLeft>
-				&lt;
+				<CaretLeft size={20} />
 			</CarouselButton>
 			{[0, 1, 2, 3].map((index) => (
 				<CarouselImage
@@ -29,7 +30,7 @@ export const Carousel: React.FC<ICarouselProps> = ({ images }) => {
 				/>
 			))}
 			<CarouselButton onClick={nextSlide} $isLeft={false}>
-				&gt;
+				<CaretRight size={20} />
 			</CarouselButton>
 		</CarouselContainer>
 	)
