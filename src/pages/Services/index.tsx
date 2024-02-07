@@ -1,6 +1,7 @@
 import {
 	CarouselBox,
 	CoverBox,
+	CustomerBox,
 	ExampleDescription,
 	ExampleImage,
 	ServicesBox,
@@ -14,7 +15,7 @@ import {
 import Cover from "../../assets/services/coverImg.jpeg"
 import { Counter } from "./components/Counter"
 import { Carousel } from "./components/Carousel"
-import { Buildings, ChatCenteredText, HouseLine, PaintBrushBroad } from "@phosphor-icons/react"
+import { Buildings, ChatCenteredText, HouseLine, PaintBrushBroad, UserCirclePlus } from "@phosphor-icons/react"
 
 import CarouselImg1 from "../../assets/services/carousel1.jpeg"
 import CarouselImg2 from "../../assets/services/carousel2.jpeg"
@@ -143,6 +144,17 @@ export function ServicesPage() {
 					</ExampleDescription>
 				</ServicesExampleBox>
 			</ServicesExamplesContainer>
+			<CustomerBox>
+				<h3>Conheça nossos clientes</h3>
+				<div>
+					<UserCirclePlus size={96} />
+					<UserCirclePlus size={96} />
+					<UserCirclePlus size={96} />
+					<UserCirclePlus size={96} />	
+					<UserCirclePlus size={96} />
+					<UserCirclePlus size={96} />	
+				</div>
+			</CustomerBox>
 		</ServicesContainer>
 	)
 }
