@@ -160,35 +160,3 @@ export const ExampleImage = styled.div<{ $isMarginRight: boolean }>`
 		border-radius: 16px;
 	}
 `
-
-export const CustomerBox = styled.section`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    gap: 4rem;
-
-    padding: 10rem;
-	padding-bottom: 16rem;
-
-    h3 {
-        font-size: 1.5rem;
-        color: ${props => props.theme.colors["gray-300"]};
-        text-transform: uppercase;
-    }
-
-	div {
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: space-evenly;
-
-		svg {
-			color: ${props => props.theme.colors["gray-300"]};
-			transition: color 0.5s ease-out;
-
-			&:hover {
-				color: ${props => props.theme.colors["beige-100"]};
-			}
-		}
-	}
-`

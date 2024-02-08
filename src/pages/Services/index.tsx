@@ -1,7 +1,6 @@
 import {
 	CarouselBox,
 	CoverBox,
-	CustomerBox,
 	ExampleDescription,
 	ExampleImage,
 	ServicesBox,
@@ -15,7 +14,8 @@ import {
 import Cover from "../../assets/services/coverImg.jpeg"
 import { Counter } from "./components/Counter"
 import { Carousel } from "./components/Carousel"
-import { Buildings, ChatCenteredText, HouseLine, PaintBrushBroad, UserCirclePlus } from "@phosphor-icons/react"
+import { Buildings, ChatCenteredText, HouseLine, PaintBrushBroad } from "@phosphor-icons/react"
+import { ExploreButton } from "./components/ExploreButton"
 
 import CarouselImg1 from "../../assets/services/carousel1.jpeg"
 import CarouselImg2 from "../../assets/services/carousel2.jpeg"
@@ -26,7 +26,7 @@ import CarouselImg6 from "../../assets/services/carousel6.jpeg"
 import CarouselImg7 from "../../assets/services/carousel7.jpeg"
 import CarouselImg8 from "../../assets/services/carousel8.jpeg"
 import ProjectImg1 from "../../assets/home/img4.jpeg"
-import { ExploreButton } from "./components/ExploreButton"
+import { CustomersBox } from "./components/CustomersBox"
 
 export function ServicesPage() {
 	const carouselImages = [
@@ -99,7 +99,7 @@ export function ServicesPage() {
 				</ServicesItens>
 				<ServicesItens>
 					<ServicesIcons>
-						<ChatCenteredText  size={32} />
+						<ChatCenteredText size={32} />
 					</ServicesIcons>
 					<ServicesDescription>
 						<h4>Consultoria</h4>
@@ -135,7 +135,8 @@ export function ServicesPage() {
 							vel. Quam elementum pulvinar etiam non quam. Nascetur ridiculus mus mauris vitae ultricies
 							leo integer. Arcu bibendum at varius vel pharetra. Ullamcorper morbi tincidunt ornare massa
 							eget egestas purus viverra. Purus viverra accumsan in nisl nisi scelerisque eu ultrices
-							vitae. Vitae semper quis lectus nulla at volutpat diam.<br />
+							vitae. Vitae semper quis lectus nulla at volutpat diam.
+							<br />
 							Praesent tristique magna sit amet purus. Non arcu risus quis varius quam quisque id diam
 							vel. Quam elementum pulvinar etiam non quam. Nascetur ridiculus mus mauris vitae ultricies
 							leo integer. Arcu bibendum at varius vel pharetra.
@@ -144,17 +145,7 @@ export function ServicesPage() {
 					</ExampleDescription>
 				</ServicesExampleBox>
 			</ServicesExamplesContainer>
-			<CustomerBox>
-				<h3>Conheça nossos clientes</h3>
-				<div>
-					<UserCirclePlus size={96} />
-					<UserCirclePlus size={96} />
-					<UserCirclePlus size={96} />
-					<UserCirclePlus size={96} />	
-					<UserCirclePlus size={96} />
-					<UserCirclePlus size={96} />	
-				</div>
-			</CustomerBox>
+			<CustomersBox />
 		</ServicesContainer>
 	)
 }
